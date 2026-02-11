@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bear Game | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1 class="logo">Portfolio</h1>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="cs-projects.html" class="nav-link active">Computer Science & Animations</a>
+                <a href="math-papers.html" class="nav-link">Math Papers</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-page">
+        <div class="project-page-header">
+            <a href="cs-projects.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+                Back to Projects
+            </a>
+            
+            <h1 class="project-page-title">Bear Game</h1>
+            
+            <div class="project-page-tags">
+                <span class="project-tag">Three.js</span>
+                <span class="project-tag">WebGL</span>
+                <span class="project-tag">GLSL Shaders</span>
+                <span class="project-tag">JavaScript</span>
+            </div>
+        </div>
+
+        <div class="project-preview-large">
+            <img src="images/bear_game.gif" alt="Armadillo Defense Gameplay">
+        </div>
+
+        <div class="project-content">
+            <p class="project-intro">
+                A browser-based 3D action game built with Three.js and WebGL. Control an orb to collect 
+                energy spheres while evading a laser-armed bear. Features real-time skeletal 
+                animation, custom GLSL shaders, and dynamic particle effects.
+            </p>
+
+            <h2>Gameplay</h2>
+            <p>
+                Navigate the orb across the cobblestone arena to collect green energy spheres. The bear
+                tracks your movement with its eyes and fires lasers when you enter its range. The laser range changes 
+                randomly in time, so you never know. If the lasers hit you for too long, your orb overloads and explodes. 
+                Collect 5 spheres to defeat the bear.
+            </p>
+
+            <h2>Controls</h2>
+            <ul class="project-features">
+                <li><strong>W / S</strong> — Move forward / backward</li>
+                <li><strong>A / D</strong> — Move left / right</li>
+                <li><strong>Q / E</strong> — Move up / down</li>
+                <li><strong>R</strong> — Restart game</li>
+                <li><strong>Mouse</strong> — Orbit camera</li>
+            </ul>
+            <h2>Graphics Techniques</h2>
+
+
+            <h3>Eye Tracking with LookAt</h3>
+            <p>
+                The bear's eyes continuously track the player's orb using <code>lookAt()</code> transformations. 
+                Each eye socket calculates the direction vector to the target and orients accordingly, creating 
+                a convincing gaze-following effect.
+            </p>
+
+            <h3>Custom GLSL Shaders</h3>
+            <p>
+                The laser beams and eye materials use custom vertex and fragment shaders written in GLSL. 
+                The laser shader creates a glowing, semi-transparent beam effect with proper depth blending.
+            </p>
+
+            <h3>Dynamic Laser Geometry</h3>
+            <p>
+                Lasers are rendered as cylinder geometries that dynamically scale based on the distance 
+                between the eye and the target. The laser origin is positioned at the eye socket, and 
+                the length is calculated in real-time using world-space distance measurements.
+            </p>
+
+            <h3>Particle System</h3>
+            <p>
+                Explosions use a custom particle system that spawns spheres with randomized velocity vectors. 
+                Each particle has independent lifetime and opacity decay, creating a satisfying explosion effect 
+                when the orb overloads or when the bear is defeated.
+            </p>
+
+            <h3>Color Interpolation</h3>
+            <p>
+                The orb's color shifts from yellow to magenta as it absorbs laser energy, implemented using 
+                linear interpolation for smooth RGB interpolation based on the current size ratio.
+            </p>
+
+            
+
+            <h2>Technical Implementation</h2>
+            <ul class="project-features">
+                <li>Real-time 3D rendering at 60fps using WebGL 2.0</li>
+                <li>Custom ShaderMaterial for laser beam effects</li>
+                <li>Dynamic geometry scaling for distance-based visuals</li>
+                <li>Collision detection using world-space distance calculations</li>
+                <li>Randomized laser range for unpredictable difficulty</li>
+                <li>PBR materials with texture maps (diffuse, normal, roughness, AO)</li>
+            </ul>
+
+            <h2>Core Technologies</h2>
+            <ul class="project-features">
+                <li>Three.js — 3D rendering framework</li>
+                <li>WebGL 2.0 — GPU-accelerated graphics</li>
+                <li>GLSL — Custom vertex and fragment shaders</li>
+                <li>JavaScript ES6 — Game logic and animation loop</li>
+            </ul>
+
+        </div>
+        <div class="project-actions" style="justify-content: center; display: flex; margin-top: 2rem;">
+            <a href="https://github.com/umaygokturk-sys/BearGame" class="btn btn-primary" target="_blank" rel="noopener">
+                <span>View on GitHub</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Z. Umay Gokturk. All rights reserved.</p>
+    </footer>
+</body>
+</html>

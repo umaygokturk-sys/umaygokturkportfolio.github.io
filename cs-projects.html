@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science & Animations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    
+    <header class="main-header">
+        <div class="header-content">
+            <h1 class="logo">Portfolio</h1>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="cs-projects.html" class="nav-link active">Computer Science & Animations</a>
+                <a href="math-papers.html" class="nav-link">Math Papers</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <span class="page-tag">Projects</span>
+        <h1 class="page-title">Computer Science & Animations</h1>
+        <p class="page-description">
+            A collection of my programming projects, computer graphics and animations.
+        </p>
+    </section>
+
+    <section class="projects-section">
+        <div class="projects-grid">
+            <!-- Project 1: Particle Simulation -->
+            <article class="project-card">
+                <div class="project-preview">
+                    <img src="images/simulation.gif" alt="Particle Simulation Preview">
+                </div>
+                <h2 class="project-title">Physics-Based Particle Simulation</h2>
+                <p class="project-description">
+                    Real-time particle motion and terrain interaction using numerical integration and collision response.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">Nvidia Warp</span>
+                    <span class="project-tag">Physics</span>
+                </div>
+                <div class="project-actions">
+                    <a href="project-particle-simulation.html" class="btn btn-primary btn-small">
+                        <span>View Project</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Project: Armadillo Defense -->
+            <article class="project-card">
+                <div class="project-preview">
+                    <img src="images/bear_game.gif" alt="Armadillo Defense Game Preview">
+                </div>
+                <h2 class="project-title">Bear Game</h2>
+                <p class="project-description">
+                    A WebGL game featuring real-time 3D rendering and custom shaders.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Three.js</span>
+                    <span class="project-tag">WebGL</span>
+                    <span class="project-tag">GLSL</span>
+                </div>
+                <div class="project-actions">
+                    <a href="project-bear-game.html" class="btn btn-primary btn-small">
+                        <span>View Project</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            
+
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Z. Umay Gokturk. All rights reserved.</p>
+    </footer>
+</body>
+</html>

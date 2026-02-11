@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Modelling | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1 class="logo">Portfolio</h1>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="cs-projects.html" class="nav-link">Computer Science & Animations</a>
+                <a href="math-papers.html" class="nav-link active">Math Papers</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="paper-page">
+        <div class="paper-page-header">
+            <a href="math-papers.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+                Back to Math Papers
+            </a>
+            
+            <h1 class="paper-page-title">Financial Modelling: How to Invest in a Portfolio?</h1>
+            
+            <div class="paper-page-meta">
+                <span class="paper-meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Umay Gokturk, David Ou, Martyna Wojciechowska
+                </span>
+                <span class="paper-meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    2025
+                </span>
+                <span class="paper-meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                    Stochastic Processes
+                </span>
+            </div>
+            
+            <div class="paper-page-abstract">
+                <strong>Abstract:</strong> This paper explores mathematical tools for making informed stock investment decisions. We present Geometric Brownian Motion (GBM) to model random stock price fluctuations, then extend it with correlated multi-stock simulations and Merton Jump-Diffusion for realistic market shocks. Using real-world data from Microsoft, IBM, Starbucks, and Apple (2007-2014), we perform Monte Carlo analysis to predict future stock behavior and provide insights for portfolio planning.
+            </div>
+        </div>
+
+        <div class="pdf-container">
+            <iframe src="papers/finance.pdf#toolbar=0&navpanes=0" title="Financial Modelling Paper"></iframe>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Z. Umay Gokturk. All rights reserved.</p>
+    </footer>
+</body>
+</html>
