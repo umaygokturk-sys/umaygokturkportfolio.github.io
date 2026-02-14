@@ -74,13 +74,6 @@
                 <li>Nvidia Warp (physics kernel acceleration)</li>
             </ul>
 
-            <h2>Running the Simulation</h2>
-            <div class="code-block">
-                <pre><code>conda create -n particle-sim -c conda-forge python=3.14 numpy pip openusd -y
-conda activate particle-sim
-pip install warp-lang
-python src/main.py --n 100 --frames 300 --integrator forward --out simulation.usd --dt 0.01 --fps 24 --restitution 0.5 --friction 0.05</code></pre>
-            </div>
 
             <h2>Future Improvements</h2>
             <ul class="project-features">
