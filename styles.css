@@ -247,7 +247,7 @@ body {
 
 .project-preview {
     width: 100%;
-    height: 200px;
+    height: 280px;
     margin-bottom: 1.25rem;
     border-radius: 6px;
     overflow: hidden;
@@ -255,6 +255,11 @@ body {
 }
 
 .project-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project-preview video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -472,6 +477,10 @@ body {
 }
 
 .project-preview-large img {
+    width: 100%;
+    display: block;
+}
+.project-preview-large video {
     width: 100%;
     display: block;
 }
